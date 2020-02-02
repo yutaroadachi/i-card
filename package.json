@@ -13,6 +13,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1",
+    "styled-components": "^5.0.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "@types/eslint-plugin-prettier": "^2.2.0",
+    "@types/styled-components": "^4.4.2",
     "@types/testing-library__jest-dom": "^5.0.0",
     "@types/testing-library__react": "^9.1.2",
     "@typescript-eslint/eslint-plugin": "^2.18.0",
