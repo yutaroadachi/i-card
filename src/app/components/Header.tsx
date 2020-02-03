@@ -9,7 +9,9 @@ const HeaderWrapper = styled.div`
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Heading1>iCard</Heading1>
+      <Heading1 fontsize="2.5rem" margin="4.5rem 0 3rem">
+        iCard
+      </Heading1>
     </HeaderWrapper>
   );
 };
