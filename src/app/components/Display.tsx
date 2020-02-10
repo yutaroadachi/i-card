@@ -10,13 +10,18 @@ const DisplayWrapper = styled.div`
 
 const CardTitle = styled.div`
   position: absolute;
+  top: 30px;
+  left: 30px;
 `;
 
 const CardContent = styled.div`
   position: absolute;
   left: 50%;
-  width: 345px;
-  height: 190px;
+  width: 365px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 `;
 
 const Display = () => {
@@ -27,12 +32,16 @@ const Display = () => {
           <Heading2>iCard</Heading2>
         </CardTitle>
         <CardContent>
-          <Heading3>Name</Heading3>
-          <p style={{ margin: '0' }}>21文字まで</p>
           <Heading3>Technology field</Heading3>
-          <p style={{ margin: '0', wordWrap: 'break-word' }}>42文字まで</p>
+          <p style={{ margin: '0 0 10px', wordWrap: 'break-word' }}>
+            Frontend/Backend engineer
+          </p>
           <Heading3>Technology stack</Heading3>
-          <p style={{ margin: '0', wordWrap: 'break-word' }}>42文字まで</p>
+          <p style={{ margin: '0 0 30px', wordWrap: 'break-word' }}>
+            React
+            <br />
+            Ruby on Rails
+          </p>
         </CardContent>
       </Card>
     </DisplayWrapper>

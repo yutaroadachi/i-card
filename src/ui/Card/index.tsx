@@ -19,7 +19,7 @@ const StyledCard = styled.div<
     -3px -3px 6px rgba(255, 255, 255, 0.3),
     inset 2px 2px 5px rgba(255, 255, 255, 0.3),
     inset -2px -2px 5px rgba(0, 0, 0, 0.3);
-  padding: 30px;
+  padding: 10px;
   width: ${({ width }) => width};
   height: ${({ height }) => height};
   border-radius: ${({ borderRadius }) => borderRadius};
