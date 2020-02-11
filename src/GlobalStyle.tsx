@@ -8,6 +8,10 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
   }
+
+  .material-icons {
+    vertical-align: middle;
+  }
 `;
 
 export default GlobalStyle;
