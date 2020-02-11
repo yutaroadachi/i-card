@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from 'ui/Card';
-import { Heading2, Heading3 } from 'ui/Typography';
+import { Heading2, Heading3, Paragraph } from 'ui/Typography';
 
 const DisplayWrapper = styled.div`
   display: flex;
@@ -33,15 +33,13 @@ const Display = () => {
         </CardTitle>
         <CardContent>
           <Heading3>Technology field</Heading3>
-          <p style={{ margin: '0 0 10px', wordWrap: 'break-word' }}>
-            Frontend/Backend engineer
-          </p>
+          <Paragraph margin="0 0 10px">Frontend/Backend engineer</Paragraph>
           <Heading3>Technology stack</Heading3>
-          <p style={{ margin: '0 0 30px', wordWrap: 'break-word' }}>
+          <Paragraph margin="0 0 30px">
             React
             <br />
             Ruby on Rails
-          </p>
+          </Paragraph>
         </CardContent>
       </Card>
     </DisplayWrapper>

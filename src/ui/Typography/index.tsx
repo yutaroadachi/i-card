@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import theme from 'theme';
 
 type TypographyProps = {
   children: React.ReactNode;
@@ -9,8 +10,8 @@ type TypographyProps = {
 };
 
 const StyledHeading1 = styled.h1<Pick<TypographyProps, 'fontsize' | 'margin'>>`
-  color: #babecc;
-  text-shadow: 1px 1px 1px #fff;
+  color: ${theme.main.darker};
+  text-shadow: 1px 1px 1px ${theme.main.brighter};
   font-size: ${({ fontsize }) => fontsize};
   margin: ${({ margin }) => margin};
 `;
@@ -55,5 +56,24 @@ export const Heading3: React.FC<TypographyProps> = ({
     <StyledHeading3 className={className} fontsize={fontsize} margin={margin}>
       {children}
     </StyledHeading3>
+  );
+};
+
+const StyledParagraph = styled.p<Pick<TypographyProps, 'fontsize' | 'margin'>>`
+  word-wrap: break-word;
+  font-size: ${({ fontsize }) => fontsize};
+  margin: ${({ margin }) => margin};
+`;
+
+export const Paragraph: React.FC<TypographyProps> = ({
+  children,
+  className,
+  fontsize = '1.0rem',
+  margin = '0 0 0 0',
+}) => {
+  return (
+    <StyledParagraph className={className} fontsize={fontsize} margin={margin}>
+      {children}
+    </StyledParagraph>
   );
 };

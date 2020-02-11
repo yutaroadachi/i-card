@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import theme from 'theme';
 
 type CardProps = {
   children: React.ReactNode;
@@ -14,7 +15,7 @@ const StyledCard = styled.div<
   Pick<CardProps, 'width' | 'height' | 'borderRadius' | 'margin'>
 >`
   position: relative;
-  background-color: #ebecf0;
+  background-color: ${theme.main.base};
   box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
     -3px -3px 6px rgba(255, 255, 255, 0.3),
     inset 2px 2px 5px rgba(255, 255, 255, 0.3),
