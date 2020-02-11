@@ -19,6 +19,7 @@ const CardContent = styled.div`
   left: 50%;
   width: 365px;
   height: 230px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

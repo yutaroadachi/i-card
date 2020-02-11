@@ -68,7 +68,7 @@ const StyledParagraph = styled.p<Pick<TypographyProps, 'fontsize' | 'margin'>>`
 export const Paragraph: React.FC<TypographyProps> = ({
   children,
   className,
-  fontsize = '1.0rem',
+  fontsize = '1rem',
   margin = '0 0 0 0',
 }) => {
   return (
