@@ -4,12 +4,13 @@ import { Heading1 } from 'ui/Typography';
 
 const HeaderWrapper = styled.div`
   text-align: center;
+  margin: 4.5rem 0 3rem;
 `;
 
 const Header = () => {
   return (
     <HeaderWrapper>
-      <Heading1 margin="4.5rem 0 3rem">iCard</Heading1>
+      <Heading1>iCard</Heading1>
     </HeaderWrapper>
   );
 };

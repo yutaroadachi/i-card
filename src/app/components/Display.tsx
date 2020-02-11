@@ -6,6 +6,7 @@ import { Heading2, Heading3, Paragraph } from 'ui/Typography';
 const DisplayWrapper = styled.div`
   display: flex;
   justify-content: center;
+  margin: 0 0 3rem;
 `;
 
 const CardTitle = styled.div`
@@ -28,7 +29,7 @@ const CardContent = styled.div`
 const Display = () => {
   return (
     <DisplayWrapper>
-      <Card width="750px" height="250px" borderRadius="30px" margin="0 0 3rem">
+      <Card width="750px" height="250px" borderRadius="30px">
         <CardTitle>
           <Heading2>iCard</Heading2>
         </CardTitle>

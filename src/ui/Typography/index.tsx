@@ -60,6 +60,8 @@ export const Heading3: React.FC<TypographyProps> = ({
 };
 
 const StyledParagraph = styled.p<Pick<TypographyProps, 'fontsize' | 'margin'>>`
+  color: ${theme.main.accent};
+  text-shadow: 1px 1px 1px ${theme.main.brighter};
   word-wrap: break-word;
   font-size: ${({ fontsize }) => fontsize};
   margin: ${({ margin }) => margin};
