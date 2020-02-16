@@ -16,10 +16,8 @@ const StyledCard = styled.div<
 >`
   position: relative;
   background-color: ${theme.main.base};
-  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3),
-    -3px -3px 6px rgba(255, 255, 255, 0.3),
-    inset 2px 2px 5px rgba(255, 255, 255, 0.3),
-    inset -2px -2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: -5px -5px 20px ${theme.main.brighter},
+    5px 5px 20px ${theme.main.darker};
   padding: 10px;
   width: ${({ width }) => width};
   height: ${({ height }) => height};

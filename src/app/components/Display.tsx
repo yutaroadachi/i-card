@@ -29,7 +29,7 @@ const CardContent = styled.div`
 const Display = () => {
   return (
     <DisplayWrapper>
-      <Card width="750px" height="250px" borderRadius="30px">
+      <Card width="750px" height="250px">
         <CardTitle>
           <Heading2>iCard</Heading2>
         </CardTitle>
