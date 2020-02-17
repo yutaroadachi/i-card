@@ -10,6 +10,7 @@ type ButtonProps = {
   color?: string;
   margin?: string;
   onClick?: () => void;
+  disabled?: boolean;
 };
 
 const StyledButton = styled.button<
@@ -49,6 +50,7 @@ export const Button: React.FC<ButtonProps> = ({
   color,
   margin = '0 0 0 0',
   onClick,
+  disabled,
 }) => {
   return (
     <StyledButton
@@ -58,6 +60,7 @@ export const Button: React.FC<ButtonProps> = ({
       color={color}
       margin={margin}
       onClick={onClick}
+      disabled={disabled}
     >
       {children}
     </StyledButton>

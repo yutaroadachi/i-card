@@ -47,6 +47,8 @@ const Form = () => {
     setTechnologyStackForm('');
   };
 
+  const disabled = !technologyFieldForm && !technologyStackForm;
+
   return (
     <FormWrapper>
       <InputText
@@ -71,6 +73,7 @@ const Form = () => {
         color="darkgreen"
         margin="0 0 1rem"
         onClick={clickSaveButton}
+        disabled={disabled}
       >
         <MaterialIcons
           color="darkgreen"
