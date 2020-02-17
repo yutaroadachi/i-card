@@ -8,6 +8,8 @@ type FormProps = {
   width?: string;
   borderRadius?: string;
   margin?: string;
+  value?: string;
+  onChange?: (e: any) => void;
 };
 
 const StyledInputText = styled.input<
@@ -42,6 +44,8 @@ export const InputText: React.FC<FormProps> = ({
   width,
   borderRadius,
   margin = '0 0 0 0',
+  value,
+  onChange,
 }) => {
   return (
     <StyledInputText
@@ -51,6 +55,8 @@ export const InputText: React.FC<FormProps> = ({
       width={width}
       borderRadius={borderRadius}
       margin={margin}
+      value={value}
+      onChange={onChange}
     />
   );
 };

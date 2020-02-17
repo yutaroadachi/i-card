@@ -9,6 +9,7 @@ type ButtonProps = {
   borderRadius?: string;
   color?: string;
   margin?: string;
+  onClick?: () => void;
 };
 
 const StyledButton = styled.button<
@@ -47,6 +48,7 @@ export const Button: React.FC<ButtonProps> = ({
   borderRadius,
   color,
   margin = '0 0 0 0',
+  onClick,
 }) => {
   return (
     <StyledButton
@@ -55,6 +57,7 @@ export const Button: React.FC<ButtonProps> = ({
       borderRadius={borderRadius}
       color={color}
       margin={margin}
+      onClick={onClick}
     >
       {children}
     </StyledButton>

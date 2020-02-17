@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from 'styled-components';
+import { Store } from 'store';
 import Card from 'ui/Card';
 import { Heading2, Heading3, Paragraph } from 'ui/Typography';
 
@@ -27,6 +28,8 @@ const CardContent = styled.div`
 `;
 
 const Display = () => {
+  const { state } = useContext(Store);
+
   return (
     <DisplayWrapper>
       <Card width="750px" height="250px">
@@ -35,12 +38,12 @@ const Display = () => {
         </CardTitle>
         <CardContent>
           <Heading3>Technology field</Heading3>
-          <Paragraph margin="0 0 10px">Frontend/Backend engineer</Paragraph>
+          <Paragraph margin="0 0 10px">
+            {state.profile.technologyField}
+          </Paragraph>
           <Heading3>Technology stack</Heading3>
           <Paragraph margin="0 0 30px">
-            React
-            <br />
-            Ruby on Rails
+            {state.profile.technologyStack}
           </Paragraph>
         </CardContent>
       </Card>
